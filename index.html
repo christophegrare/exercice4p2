@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Exercice 4</title>
+</head>
+<body>
+  <form>
+    <label for="nom">Votre nom  : </label><input type="text" name="nom" value="Doe" id="nom" />
+    <label for="prenom">Votre prenom  : </label><input type="text" name="prenom" value="John" id="prenom" />
+    <label for="ville">Votre ville  : </label><input type="text" name="ville" value="New York" id="ville" />
+    <button type="button" name="button" onclick="check()">RAZ</button>
+  </form>
+  <script>
+  /*Dans le fichier HTML fourni,
+  faire que le bouton RAZ efface les données des champs du formulaire.*/
+  //mise en place de onClick pour utiliser le button en HTML
+  //rapel de function check
+  function check(){
+    //le fait de mettre .value = ''; enregistre et supprime les champs
+    var name = document.getElementById('nom').value = '';
+    var userName = document.getElementById('prenom').value= '';
+    var country = document.getElementById('ville').value = '';
+    // pas d'alert!
+  };
+  </script>
+</body>
+</html>
